@@ -37,3 +37,27 @@ The system uses **Google Gemini AI** for image analysis and **Pinecone Vector Da
 
 ### Vector Database
 - Pinecone
+  ## 📸 Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
+
+---
+
+### Report Issue
+![Report](screenshots/report.png)
+
+---
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+### Map View
+![Map](screenshots/map.png)
+
+---
+
+### Admin Panel
+![Admin](screenshots/admin.png)
