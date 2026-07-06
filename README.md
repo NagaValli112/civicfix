@@ -74,4 +74,4 @@ The interactive map displays reported issues with their locations, allowing user
 
 This page displays citizen information, complaint details, report status, and other relevant information for effective issue management.
 
-![User Details](screenshots/user_details.png)
+![User Details](screenshots/userdetails.png)
