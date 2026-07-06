@@ -55,9 +55,9 @@ The system uses **Google Gemini AI** for image analysis and **Pinecone Vector Da
 ---
 
 ### Map View
-![Map](screenshots/map.png)
+![Map](screenshots/ai-analysis.png)
 
 ---
 
 ### Admin Panel
-![Admin](screenshots/admin.png)
+![Admin](screenshots/details.png)
