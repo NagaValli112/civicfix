@@ -1,0 +1,276 @@
+/* Premium Glassmorphic Design for Issue Details */
+
+.details-page-wrapper {
+    min-height: calc(100vh - 64px);
+    /* Account for navbar */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.details-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header Actions */
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.back-button {
+    background: white !important;
+    color: #475569 !important;
+    border: 1px solid #e2e8f0 !important;
+    font-weight: 500 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+}
+
+.back-button:hover {
+    background: #f8fafc !important;
+    transform: translateY(-1px);
+}
+
+.delete-button {
+    background: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.delete-button:hover {
+    background: #fecaca;
+    transform: translateY(-1px);
+}
+
+/* Glass Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Hero Image Section */
+.hero-image-container {
+    height: 350px;
+    background-color: #cbd5e1;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+.no-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #64748b;
+    font-weight: 500;
+    background: linear-gradient(to bottom right, #e2e8f0, #f1f5f9);
+}
+
+/* Status Badge - Floating */
+.status-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    text-transform: capitalize;
+    font-size: 0.95rem;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+.status-open {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.status-in-progress {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.status-resolved {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.status-rejected {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Content Section */
+.details-content {
+    padding: 2.5rem;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.title-row h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    background: -webkit-linear-gradient(45deg, #1e293b, #475569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+.severity-badge {
+    padding: 0.35rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.severity-high {
+    background: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+}
+
+.severity-medium {
+    background: #fef3c7;
+    color: #d97706;
+    border: 1px solid #fde68a;
+}
+
+.severity-low {
+    background: #dcfce7;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+}
+
+/* Meta Info Grid */
+.meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.meta-item svg {
+    color: #94a3b8;
+}
+
+.category-tag {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Description Section */
+.description-section {
+    margin-bottom: 2.5rem;
+}
+
+.description-section h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 0.75rem;
+}
+
+.description-section p {
+    line-height: 1.7;
+    color: #475569;
+    font-size: 1.05rem;
+}
+
+/* Location Section */
+.location-section h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.address-text {
+    color: #64748b;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .details-page-wrapper {
+        padding: 1rem;
+    }
+
+    .hero-image-container {
+        height: 250px;
+    }
+
+    .title-row h1 {
+        font-size: 1.5rem;
+    }
+
+    .details-content {
+        padding: 1.5rem;
+    }
+}
