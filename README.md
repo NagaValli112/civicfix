@@ -61,3 +61,17 @@ The system uses **Google Gemini AI** for image analysis and **Pinecone Vector Da
 
 ### VIEW DETAILS
 ![DETAILS](screenshots/details.png)
+
+### 🗺️ Map View
+
+The interactive map displays reported issues with their locations, allowing users and administrators to quickly identify problem areas.
+
+![Map View](screenshots/map.png)
+
+---
+
+### 👤 User Details
+
+This page displays citizen information, complaint details, report status, and other relevant information for effective issue management.
+
+![User Details](screenshots/user-details.png)
